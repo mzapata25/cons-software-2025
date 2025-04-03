@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Página de Mateo</title>
+  </head>
+  <body>
+    <h1>Mi Página Web Personal</h1>
+    <h2>Mis datos personales</h2>
+    <p>Me llamo Mateo Zapata (matrícula A01708573), tengo 20 años y estoy en mi segundo año de la carrera de Ingeniero en Tecnologías Computacionales (ITC).</p>
+    <p>Mi correo electrónico es: <a href="mailto:a01708573@tec.mx">a01708573@tec.mx</a>.</p>
+    <p>Me gusta el fútbol (sobre todo el FC Barcelona y las selecciones de España y Argentina) y la Fórmula 1. Además, jugué basket antes, pero hace unos años que lo dejé.</p>
+    <img src="https://th.bing.com/th/id/OIP.9GELFuYoob_AF9DRCOODeQHaCf?w=340&h=117&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt ="Escudo del FC Barcelona" width="250">
+    <p>Soy de España, pero hace 3 años y medio que me mudé a México.</p>
+    <img src="https://www.bing.com/th/id/OGC.3120fbb39bddb29889b3cd24588cc6c4?pid=1.7&rurl=https%3a%2f%2fcdn.pixabay.com%2fanimation%2f2022%2f09%2f13%2f17%2f55%2f17-55-34-595_512.gif&ehk=vL3I0Py2Ua20aACz%2f%2fVCzFNUDyQhNA6KPzbjjjSI8TM%3d" alt="GIF de la bandera de España" height="150">
+    <h2>Preguntas a responder</h2>
+    <ul id="Preguntas">
+        <li>¿Cuál es la diferencia entre Internet y la World Wide Web?</li>
+        <p>A pesar de que son conceptos que se pueden llegar a confundir, no son lo mismo. Internet se refiere a la infraestructura global que conecta diferentes dispositivos entre diferentes redes (la red de redes) y usa tecnologías como TCP/IP o DNS. La web (WWW) se refiere a una parte del Internet que es accesible por navegadores web y consiste de páginas web, con el texto e imágenes que estas tengan.</p>
+        <li>¿Cuáles son las partes de una URL?</li>
+        <p>Una URL está formada por el esquema o protocolo (normalmente HTTPS o HTTP, aunque existen otros), el dominio (como podría ser google.com, por ejemplo), opcionalmente un puerto (aunque HTTPS y HTTP ya lo traen incluido), una ruta (para indicar el lugar exacto dentro de una página web) y, opcionalmente, parámentros de consulta (indicados con "?") y anclas (indicadas con "#").</p>
+        <li>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</li>
+        <p><ul id="Metodos_HTTP">
+          <li>GET: Obtener recursos sin realizar modificación alguna.</li>
+          <li>HEAD: Muy similar al GET, pero solo para obtener información del encabezado de los recursos.</li>
+          <li>POST: Se usa para enviar datos al servidor con el objetivo de crear o actualizar recursos.</li>
+          <li>PUT: Reemplaza completamente un recurso existente. Si no hay uno, crea uno desde cero.</li>
+          <li>PATCH: Muy similar a PUT, pero solo modifica los recursos parcialmente. Muy útil para modificar tan sólo pequeños atributos de un recursos sin sobrescribirlo por completo.</li>
+          <li>DELETE: Elimina recursos del servidor.</li>
+        </ul></p>
+        <li>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</li>
+        <p>El método de POST. Porque se debe enviar datos al servidor para verificar si los datos de acceso proporcionados son correctos o, además, no se desea realizar modificación alguna de ningún recurso.</p>
+        <li>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</li>
+        <p>El GET. Ya que el recurso se carga (a través del navegador web), pero este no debe sufrir modificación alguna.</p>
+        <li>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</li>
+        <p>Significa que la solicitud ha sido exitosa; entonces, no ha ocurrido ningún error.</p>
+        <li>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</li>
+        <p>Excepto si el proveedor de hosting tiene algún problema, SÍ, es responsabilidad del desarrollador, ya que este error implica que, por algún motivo, la página no ha sido encontrada. Para esto, se debería redireccionar permanentemente o (si, por lo que sea no se puede) crear un página de 404 personalizada y que rediriga fácilmente a los usuarios a las otras secciones (que sí funcionan) de la página en cuestión.</p>
+        <li>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</li>
+        <p>Cómo en el error 404, generalmete SÍ es responsabilidad del desarrollador. Este error significa que el servidor ha tenido un error interno, esto puede ser provocado por un error de código, el servidor web, la base de datos o tiempos de inactividad (para servicios externos), entre otros. El desarrollador debe de asegurarse de que su servidor funciona correctamente para dar a los clientes una buena experiencia.</p>
+        <li>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</li>
+        <p>Es un elemento que, aunque podría ser posible seguirlo usando, ya no se recomienda utlizarlo en la actualidad, debido a que pronto podría quedar obsoleto; se recomienda usar equivalentes modernos. Por ejemplo, en lugar de &lt;font&gt; para cambiar tipos de fuentes, ahora se recomienda hacer esto desde CSS. En lugar de usar &lt;big&gt; y &lt;small&gt; se recomienda usar font-size desde CSS.</p>
+        <li>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</li>
+        <p>La nueva versión (HTML 5) contiene semántica mejorada, soporte multimedia nativo, soporte gráfico (como WebGL) nativo, más tipos de entradas para formularios, almacenamiento local, comptatibilidad móvil y más APIs nativas.</p>
+        <li>¿Qué componentes de estructura y estilo tiene una tabla?</li>
+        <p>Una tabla tiene varios elementos que la componen. El contenedor principal se define con &lt;table&gt;. Para el título se usa &lt;caption&gt;. El encabezado, cuerpo y pie se definen con las etiquetas normales en HTML para esto, pero con una "t" por delante (&lt;thead&gt;, por ejemplo). Las filas son &lt;tr&gt;, una celda de encabezado con &lt;th&gt; y una celda de datos &lt;td&gt;. Se usan propiedades de CSS para configurar el estilo de las tablas, como border, además de propiedades "típicas" como color, background-color, font, font-size, por ejemplo.</p>
+        <li>¿Cuáles son los principales controles de una forma HTML5?</li>
+        <p>El control más importante, por su versatilidad, de un formulario es &lt;input&gt;. Este se adapta a muchos tipos de datos para introducir, mediante type. Otros importantes son &lt;select&gt; (para crear menús desplegables), &lt;option&gt; (para dar opciones de dichos menús), &lt;button&gt; (para botones) y &lt;label&gt; (para etiquetas), entre otros.</p>
+        <li>¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</li>
+        <p>He obtenido 581 puntos de 594 posibles. Aunque puede haber aspectos que no son 100% compatibles, un puntuación tan alta quiere decir que mi navegador (Edge versión 134.0.3124.93 en Windows 11) es muy bueno para HTML 5 y la posibilidad de que me dé problemas es prácticamente nula.</p>
+        <li>¿Cuál es el ciclo de vida de los sistemas de información?</li>
+        <p>Un sistema de información tiene diversas fases a lo largo de su vida:
+          <ol id="Ciclo_Sist_Info">
+            <li>Planificación y estudio de viabilidad: Se examina cómo se necesita el sistema y si es viable crearlo.</li>
+            <li>Análisis de requerimientos: Se recopilan necesidades, especificaciones y limtaciones del sistema.</li>
+            <li>Diseño: Se planean la arquitectura y tecnologías a utilizar.</li>
+            <li>Desarrollo: Se crea el sistema, según lo establecido en los pasos anteriores.</li>
+            <li>Pruebas: Se comprueba de que el sistema funcione correctamente, cumpliendo con lo qué se buscaba y no teniendo fallos o errores que impidan su buen uso.</li>
+            <li>Implementación: El sistema comienza a ser operativo y usado por el público.</li>
+            <li>Mantenimiento: Durante su vida útil, se actualiza el sistema cuando las circunstancias lo requiere y se corrigen errores que puedan surgir a futuro.</li>
+            <li>Retiro: El sistema es retirado, sus datos son archivados o trasladados a otro sistema, si existe tal sucesor.</li>
+          </ol>
+        </p>
+
+
+    </ul>
+    </body>
+</html>
